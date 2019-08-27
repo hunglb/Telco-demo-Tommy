@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PMML version="4.3" xmlns="http://www.dmg.org/PMML-4_3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dmg.org/PMML-4_3 pmml-4-3.xsd">
+  <Header copyright="Copyright(c) IBM Corp. 1989-2015. All rights reserved.">
+    <Application name="IBM SPSS Modeler Server" version="18.1.1.0"/>
+    <Timestamp/>
+</Header>
+  <DataDictionary numberOfFields="20">
+    <DataField dataType="double" displayName="CALL_CENTRE_CALLS" isCyclic="0" name="CALL_CENTRE_CALLS" optype="continuous"/>
+    <DataField dataType="string" displayName="MFTR" isCyclic="0" name="MFTR" optype="categorical">
+      <Value property="valid" value=""/>
+      <Value displayValue="Apple" property="valid" value="Apple"/>
+      <Value displayValue="HTC" property="valid" value="HTC"/>
+      <Value displayValue="Huawei" property="valid" value="Huawei"/>
+      <Value displayValue="LG" property="valid" value="LG"/>
+      <Value displayValue="Motorola" property="valid" value="Motorola"/>
+      <Value displayValue="Nokia" property="valid" value="Nokia"/>
+      <Value displayValue="RIM" property="valid" value="RIM"/>
+      <Value displayValue="Samsung" property="valid" value="Samsung"/>
+      <Value displayValue="Sierra Wireless" property="valid" value="Sierra Wireless"/>
+      <Value displayValue="Sony Ericsson" property="valid" value="Sony Ericsson"/>
+</DataField>
+    <DataField dataType="double" displayName="EXTERNAL_CONGESTION_ERRORS" isCyclic="0" name="EXTERNAL_CONGESTION_ERRORS" optype="continuous"/>
+    <DataField dataType="double" displayName="NORMAL_CALLS" isCyclic="0" name="NORMAL_CALLS" optype="continuous"/>
+    <DataField dataType="double" displayName="SUBSCRIBER_ERRORS" isCyclic="0" name="SUBSCRIBER_ERRORS" optype="continuous"/>
+    <DataField dataType="double" displayName="QOS_CONGESTION" isCyclic="0" name="QOS_CONGESTION" optype="continuous"/>
+    <DataField dataType="double" displayName="QOS_SUBSCRIBER" isCyclic="0" name="QOS_SUBSCRIBER" optype="continuous"/>
+    <DataField dataType="string" displayName="QOS_GROUP" isCyclic="0" name="QOS_GROUP" optype="categorical">
+      <Value displayValue="Fair" property="valid" value="Fair"/>
+      <Value displayValue="Good" property="valid" value="Good"/>
+      <Value displayValue="Poor" property="valid" value="Poor"/>
+</DataField>
+    <DataField dataType="double" displayName="USAGE_DIRECTION" isCyclic="0" name="USAGE_DIRECTION" optype="continuous"/>
+    <DataField dataType="double" displayName="EVENT_TYPE_DATA_USAGE_DIRECTION" isCyclic="0" name="EVENT_TYPE_DATA_USAGE_DIRECTION" optype="continuous"/>
+    <DataField dataType="double" displayName="EVENT_TYPE_INCOMING_USAGE_DIRECT" isCyclic="0" name="EVENT_TYPE_INCOMING_USAGE_DIRECT" optype="continuous"/>
+    <DataField dataType="double" displayName="EVENT_TYPE_OUTGOING_USAGE_DIRECT" isCyclic="0" name="EVENT_TYPE_OUTGOING_USAGE_DIRECT" optype="continuous"/>
+    <DataField dataType="double" displayName="EVENT_TYPE_SMS_USAGE_DIRECTION" isCyclic="0" name="EVENT_TYPE_SMS_USAGE_DIRECTION" optype="continuous"/>
+    <DataField dataType="double" displayName="OUTGOING_OVERALL" isCyclic="0" name="OUTGOING_OVERALL" optype="continuous"/>
+    <DataField dataType="double" displayName="INCOMING_OVERALL" isCyclic="0" name="INCOMING_OVERALL" optype="continuous"/>
+    <DataField dataType="double" displayName="SMS_OVERALL" isCyclic="0" name="SMS_OVERALL" optype="continuous"/>
+    <DataField dataType="double" displayName="DATA_OVERALL" isCyclic="0" name="DATA_OVERALL" optype="continuous"/>
+    <DataField dataType="string" displayName="USAGE_LIFESTYLE" isCyclic="0" name="USAGE_LIFESTYLE" optype="categorical">
+      <Value displayValue="High Data" property="valid" value="High Data"/>
+      <Value displayValue="High Overall" property="valid" value="High Overall"/>
+      <Value displayValue="High SMS" property="valid" value="High SMS"/>
+      <Value displayValue="Low Overall" property="valid" value="Low Overall"/>
+      <Value displayValue="No Data Usage" property="valid" value="No Data Usage"/>
+      <Value displayValue="Other Usage" property="valid" value="Other Usage"/>
+      <Value displayValue="Voice Caller" property="valid" value="Voice Caller"/>
+</DataField>
+    <DataField dataType="string" displayName="LIFESTYLE" isCyclic="0" name="LIFESTYLE" optype="categorical">
+      <Value displayValue="Daily Grinder" property="valid" value="Daily Grinder"/>
+      <Value displayValue="Delivering the Goods" property="valid" value="Delivering the Goods"/>
+      <Value displayValue="Homebody" property="valid" value="Homebody"/>
+      <Value displayValue="Night Shift" property="valid" value="Night Shift"/>
+      <Value displayValue="Norm Peterson" property="valid" value="Norm Peterson"/>
+      <Value displayValue="Undef" property="valid" value="Undef"/>
+</DataField>
+    <DataField dataType="double" displayName="CHURN" isCyclic="0" name="CHURN" optype="continuous"/>
+</DataDictionary>
+  <TreeModel algorithmName="CHAID" functionName="regression">
+    <Extension extender="spss.com">
+      <X-risk value="0.0878049994282"/>
+      <X-seOfRisk value="0.00451885947447043"/>
+</Extension>
+    <MiningSchema>
+      <MiningField importance="0" name="EVENT_TYPE_OUTGOING_USAGE_DIRECT" usageType="active"/>
+      <MiningField importance="0" name="EVENT_TYPE_INCOMING_USAGE_DIRECT" usageType="active"/>
+      <MiningField importance="0" name="EVENT_TYPE_SMS_USAGE_DIRECTION" usageType="active"/>
+      <MiningField importance="0.69041" name="OUTGOING_OVERALL" usageType="active"/>
+      <MiningField importance="0.30959" name="SMS_OVERALL" usageType="active"/>
+      <MiningField name="CHURN" usageType="predicted"/>
+</MiningSchema>
+    <ModelStats>
+      <UnivariateStats field="EVENT_TYPE_OUTGOING_USAGE_DIRECT">
+        <Counts invalidFreq="0" missingFreq="0" totalFreq="2438"/>
+        <NumericInfo maximum="9" minimum="0"/>
+</UnivariateStats>
+      <UnivariateStats field="EVENT_TYPE_INCOMING_USAGE_DIRECT">
+        <Counts invalidFreq="0" missingFreq="0" totalFreq="2438"/>
+        <NumericInfo maximum="9" minimum="0"/>
+</UnivariateStats>
+      <UnivariateStats field="EVENT_TYPE_SMS_USAGE_DIRECTION">
+        <Counts invalidFreq="0" missingFreq="0" totalFreq="2438"/>
+        <NumericInfo maximum="9" minimum="0"/>
+</UnivariateStats>
+      <UnivariateStats field="OUTGOING_OVERALL">
+        <Counts invalidFreq="0" missingFreq="0" totalFreq="2438"/>
+        <NumericInfo maximum="9" minimum="0"/>
+</UnivariateStats>
+      <UnivariateStats field="SMS_OVERALL">
+        <Counts invalidFreq="0" missingFreq="0" totalFreq="2438"/>
+        <NumericInfo maximum="9" minimum="0"/>
+</UnivariateStats>
+</ModelStats>
+    <Node defaultChild="3" id="0" recordCount="2438" score="0.105004101722724">
+      <Extension>
+        <X-Node>
+          <X-RegInfo mean="0.105004101722724" stdDev="0.306621596483401"/>
+          <X-NodeStats adjPValue="1.70736498617026e-11" df1="3" df2="2434" fStats="22.0157336680248"/>
+</X-Node>
+</Extension>
+      <True/>
+      <ScoreDistribution recordCount="2182" value="0"/>
+      <ScoreDistribution recordCount="0" value="1"/>
+      <ScoreDistribution recordCount="0" value="2"/>
+      <ScoreDistribution recordCount="0" value="3"/>
+      <ScoreDistribution recordCount="0" value="4"/>
+      <ScoreDistribution recordCount="0" value="5"/>
+      <ScoreDistribution recordCount="0" value="6"/>
+      <ScoreDistribution recordCount="0" value="7"/>
+      <ScoreDistribution recordCount="0" value="8"/>
+      <ScoreDistribution recordCount="256" value="9"/>
+      <Node defaultChild="5" id="1" recordCount="242" score="0.214876033057851">
+        <Extension>
+          <X-Node>
+            <X-RegInfo mean="0.214876033057851" stdDev="0.41158758656561"/>
+            <X-NodeStats adjPValue="0.00258955443663228" df1="1" df2="240" fStats="15.0350630189542"/>
+</X-Node>
+</Extension>
+        <CompoundPredicate booleanOperator="surrogate">
+          <CompoundPredicate booleanOperator="and">
+            <True/>
+            <SimplePredicate field="EVENT_TYPE_OUTGOING_USAGE_DIRECT" operator="lessOrEqual" value="0.298851"/>
+</CompoundPredicate>
+          <False/>
+</CompoundPredicate>
+        <ScoreDistribution recordCount="190" value="0"/>
+        <ScoreDistribution recordCount="0" value="1"/>
+        <ScoreDistribution recordCount="0" value="2"/>
+        <ScoreDistribution recordCount="0" value="3"/>
+        <ScoreDistribution recordCount="0" value="4"/>
+        <ScoreDistribution recordCount="0" value="5"/>
+        <ScoreDistribution recordCount="0" value="6"/>
+        <ScoreDistribution recordCount="0" value="7"/>
+        <ScoreDistribution recordCount="0" value="8"/>
+        <ScoreDistribution recordCount="52" value="9"/>
+        <Node defaultChild="12" id="5" recordCount="140" score="0.3">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="0.3" stdDev="0.459903023872323"/>
+              <X-NodeStats adjPValue="0.00181282229270365" df1="1" df2="138" fStats="15.6589137772323"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <True/>
+              <SimplePredicate field="EVENT_TYPE_INCOMING_USAGE_DIRECT" operator="lessOrEqual" value="0.216667"/>
+</CompoundPredicate>
+            <True/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="98" value="0"/>
+          <ScoreDistribution recordCount="0" value="1"/>
+          <ScoreDistribution recordCount="0" value="2"/>
+          <ScoreDistribution recordCount="0" value="3"/>
+          <ScoreDistribution recordCount="0" value="4"/>
+          <ScoreDistribution recordCount="0" value="5"/>
+          <ScoreDistribution recordCount="0" value="6"/>
+          <ScoreDistribution recordCount="0" value="7"/>
+          <ScoreDistribution recordCount="0" value="8"/>
+          <ScoreDistribution recordCount="42" value="9"/>
+          <Node id="12" recordCount="108" score="0.37962962962963">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="0.37962962962963" stdDev="0.487557187493423"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <True/>
+                <SimplePredicate field="EVENT_TYPE_SMS_USAGE_DIRECTION" operator="lessOrEqual" value="0.175973"/>
+</CompoundPredicate>
+              <True/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="67" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="0" value="3"/>
+            <ScoreDistribution recordCount="0" value="4"/>
+            <ScoreDistribution recordCount="0" value="5"/>
+            <ScoreDistribution recordCount="0" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="41" value="9"/>
+</Node>
+          <Node id="13" recordCount="32" score="0.03125">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="0.03125" stdDev="0.176776695296637"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="or">
+                <SimplePredicate field="EVENT_TYPE_SMS_USAGE_DIRECTION" operator="isMissing"/>
+                <SimplePredicate field="EVENT_TYPE_SMS_USAGE_DIRECTION" operator="greaterThan" value="0.175973"/>
+</CompoundPredicate>
+              <False/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="31" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="0" value="3"/>
+            <ScoreDistribution recordCount="0" value="4"/>
+            <ScoreDistribution recordCount="0" value="5"/>
+            <ScoreDistribution recordCount="0" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="1" value="9"/>
+</Node>
+</Node>
+        <Node id="6" recordCount="102" score="0.0980392156862745">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="0.0980392156862745" stdDev="0.298836155697155"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="or">
+              <SimplePredicate field="EVENT_TYPE_INCOMING_USAGE_DIRECT" operator="isMissing"/>
+              <SimplePredicate field="EVENT_TYPE_INCOMING_USAGE_DIRECT" operator="greaterThan" value="0.216667"/>
+</CompoundPredicate>
+            <False/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="92" value="0"/>
+          <ScoreDistribution recordCount="0" value="1"/>
+          <ScoreDistribution recordCount="0" value="2"/>
+          <ScoreDistribution recordCount="0" value="3"/>
+          <ScoreDistribution recordCount="0" value="4"/>
+          <ScoreDistribution recordCount="0" value="5"/>
+          <ScoreDistribution recordCount="0" value="6"/>
+          <ScoreDistribution recordCount="0" value="7"/>
+          <ScoreDistribution recordCount="0" value="8"/>
+          <ScoreDistribution recordCount="10" value="9"/>
+</Node>
+</Node>
+      <Node id="2" recordCount="961" score="0.0697190426638918">
+        <Extension>
+          <X-Node>
+            <X-RegInfo mean="0.0697190426638918" stdDev="0.254805530710676"/>
+</X-Node>
+</Extension>
+        <CompoundPredicate booleanOperator="surrogate">
+          <CompoundPredicate booleanOperator="and">
+            <SimplePredicate field="EVENT_TYPE_OUTGOING_USAGE_DIRECT" operator="greaterThan" value="0.298851"/>
+            <SimplePredicate field="EVENT_TYPE_OUTGOING_USAGE_DIRECT" operator="lessOrEqual" value="1.045977"/>
+</CompoundPredicate>
+          <False/>
+</CompoundPredicate>
+        <ScoreDistribution recordCount="894" value="0"/>
+        <ScoreDistribution recordCount="0" value="1"/>
+        <ScoreDistribution recordCount="0" value="2"/>
+        <ScoreDistribution recordCount="0" value="3"/>
+        <ScoreDistribution recordCount="0" value="4"/>
+        <ScoreDistribution recordCount="0" value="5"/>
+        <ScoreDistribution recordCount="0" value="6"/>
+        <ScoreDistribution recordCount="0" value="7"/>
+        <ScoreDistribution recordCount="0" value="8"/>
+        <ScoreDistribution recordCount="67" value="9"/>
+</Node>
+      <Node defaultChild="7" id="3" recordCount="1204" score="0.104651162790698">
+        <Extension>
+          <X-Node>
+            <X-RegInfo mean="0.104651162790698" stdDev="0.306230607458848"/>
+            <X-NodeStats adjPValue="0.0219010548219739" df1="4" df2="1199" fStats="5.62512298962156"/>
+</X-Node>
+</Extension>
+        <CompoundPredicate booleanOperator="surrogate">
+          <CompoundPredicate booleanOperator="and">
+            <SimplePredicate field="EVENT_TYPE_OUTGOING_USAGE_DIRECT" operator="greaterThan" value="1.045977"/>
+            <True/>
+</CompoundPredicate>
+          <True/>
+</CompoundPredicate>
+        <ScoreDistribution recordCount="1078" value="0"/>
+        <ScoreDistribution recordCount="0" value="1"/>
+        <ScoreDistribution recordCount="0" value="2"/>
+        <ScoreDistribution recordCount="0" value="3"/>
+        <ScoreDistribution recordCount="0" value="4"/>
+        <ScoreDistribution recordCount="0" value="5"/>
+        <ScoreDistribution recordCount="0" value="6"/>
+        <ScoreDistribution recordCount="0" value="7"/>
+        <ScoreDistribution recordCount="0" value="8"/>
+        <ScoreDistribution recordCount="126" value="9"/>
+        <Node defaultChild="14" id="7" recordCount="296" score="0.118243243243243">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="0.118243243243243" stdDev="0.323442743663802"/>
+              <X-NodeStats adjPValue="0.0349417577361826" df1="1" df2="294" fStats="8.47193377473016"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <True/>
+              <SimplePredicate field="OUTGOING_OVERALL" operator="lessOrEqual" value="-0.668042"/>
+</CompoundPredicate>
+            <True/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="261" value="0"/>
+          <ScoreDistribution recordCount="0" value="1"/>
+          <ScoreDistribution recordCount="0" value="2"/>
+          <ScoreDistribution recordCount="0" value="3"/>
+          <ScoreDistribution recordCount="0" value="4"/>
+          <ScoreDistribution recordCount="0" value="5"/>
+          <ScoreDistribution recordCount="0" value="6"/>
+          <ScoreDistribution recordCount="0" value="7"/>
+          <ScoreDistribution recordCount="0" value="8"/>
+          <ScoreDistribution recordCount="35" value="9"/>
+          <Node id="14" recordCount="206" score="0.0825242718446602">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="0.0825242718446602" stdDev="0.275832110289104"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <True/>
+                <SimplePredicate field="SMS_OVERALL" operator="lessOrEqual" value="-0.467614"/>
+</CompoundPredicate>
+              <True/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="189" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="0" value="3"/>
+            <ScoreDistribution recordCount="0" value="4"/>
+            <ScoreDistribution recordCount="0" value="5"/>
+            <ScoreDistribution recordCount="0" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="17" value="9"/>
+</Node>
+          <Node id="15" recordCount="90" score="0.2">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="0.2" stdDev="0.402240913892395"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <SimplePredicate field="SMS_OVERALL" operator="greaterThan" value="-0.467614"/>
+                <True/>
+</CompoundPredicate>
+              <False/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="72" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="0" value="3"/>
+            <ScoreDistribution recordCount="0" value="4"/>
+            <ScoreDistribution recordCount="0" value="5"/>
+            <ScoreDistribution recordCount="0" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="18" value="9"/>
+</Node>
+</Node>
+        <Node defaultChild="16" id="8" recordCount="238" score="0.0378151260504202">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="0.0378151260504202" stdDev="0.191150898766789"/>
+              <X-NodeStats adjPValue="0.00015818252120245" df1="1" df2="236" fStats="19.2166208098146"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <SimplePredicate field="OUTGOING_OVERALL" operator="greaterThan" value="-0.668042"/>
+              <SimplePredicate field="OUTGOING_OVERALL" operator="lessOrEqual" value="-0.462883"/>
+</CompoundPredicate>
+            <False/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="229" value="0"/>
+          <ScoreDistribution recordCount="0" value="1"/>
+          <ScoreDistribution recordCount="0" value="2"/>
+          <ScoreDistribution recordCount="0" value="3"/>
+          <ScoreDistribution recordCount="0" value="4"/>
+          <ScoreDistribution recordCount="0" value="5"/>
+          <ScoreDistribution recordCount="0" value="6"/>
+          <ScoreDistribution recordCount="0" value="7"/>
+          <ScoreDistribution recordCount="0" value="8"/>
+          <ScoreDistribution recordCount="9" value="9"/>
+          <Node id="16" recordCount="200" score="0.015">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="0.015" stdDev="0.121857483279263"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <True/>
+                <SimplePredicate field="EVENT_TYPE_INCOMING_USAGE_DIRECT" operator="lessOrEqual" value="2.202186"/>
+</CompoundPredicate>
+              <True/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="197" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="0" value="3"/>
+            <ScoreDistribution recordCount="0" value="4"/>
+            <ScoreDistribution recordCount="0" value="5"/>
+            <ScoreDistribution recordCount="0" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="3" value="9"/>
+</Node>
+          <Node id="17" recordCount="38" score="0.157894736842105">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="0.157894736842105" stdDev="0.369537021476632"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <SimplePredicate field="EVENT_TYPE_INCOMING_USAGE_DIRECT" operator="greaterThan" value="2.202186"/>
+                <True/>
+</CompoundPredicate>
+              <False/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="32" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="0" value="3"/>
+            <ScoreDistribution recordCount="0" value="4"/>
+            <ScoreDistribution recordCount="0" value="5"/>
+            <ScoreDistribution recordCount="0" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="6" value="9"/>
+</Node>
+</Node>
+        <Node id="9" recordCount="262" score="0.114503816793893">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="0.114503816793893" stdDev="0.319031613611348"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <SimplePredicate field="OUTGOING_OVERALL" operator="greaterThan" value="-0.462883"/>
+              <SimplePredicate field="OUTGOING_OVERALL" operator="lessOrEqual" value="-0.156396"/>
+</CompoundPredicate>
+            <False/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="232" value="0"/>
+          <ScoreDistribution recordCount="0" value="1"/>
+          <ScoreDistribution recordCount="0" value="2"/>
+          <ScoreDistribution recordCount="0" value="3"/>
+          <ScoreDistribution recordCount="0" value="4"/>
+          <ScoreDistribution recordCount="0" value="5"/>
+          <ScoreDistribution recordCount="0" value="6"/>
+          <ScoreDistribution recordCount="0" value="7"/>
+          <ScoreDistribution recordCount="0" value="8"/>
+          <ScoreDistribution recordCount="30" value="9"/>
+</Node>
+        <Node id="10" recordCount="133" score="0.18796992481203">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="0.18796992481203" stdDev="0.392165239212002"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <SimplePredicate field="OUTGOING_OVERALL" operator="greaterThan" value="-0.156396"/>
+              <SimplePredicate field="OUTGOING_OVERALL" operator="lessOrEqual" value="0.091636"/>
+</CompoundPredicate>
+            <False/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="108" value="0"/>
+          <ScoreDistribution recordCount="0" value="1"/>
+          <ScoreDistribution recordCount="0" value="2"/>
+          <ScoreDistribution recordCount="0" value="3"/>
+          <ScoreDistribution recordCount="0" value="4"/>
+          <ScoreDistribution recordCount="0" value="5"/>
+          <ScoreDistribution recordCount="0" value="6"/>
+          <ScoreDistribution recordCount="0" value="7"/>
+          <ScoreDistribution recordCount="0" value="8"/>
+          <ScoreDistribution recordCount="25" value="9"/>
+</Node>
+        <Node id="11" recordCount="275" score="0.0981818181818182">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="0.0981818181818182" stdDev="0.29810282670356"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <SimplePredicate field="OUTGOING_OVERALL" operator="greaterThan" value="0.091636"/>
+              <True/>
+</CompoundPredicate>
+            <False/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="248" value="0"/>
+          <ScoreDistribution recordCount="0" value="1"/>
+          <ScoreDistribution recordCount="0" value="2"/>
+          <ScoreDistribution recordCount="0" value="3"/>
+          <ScoreDistribution recordCount="0" value="4"/>
+          <ScoreDistribution recordCount="0" value="5"/>
+          <ScoreDistribution recordCount="0" value="6"/>
+          <ScoreDistribution recordCount="0" value="7"/>
+          <ScoreDistribution recordCount="0" value="8"/>
+          <ScoreDistribution recordCount="27" value="9"/>
+</Node>
+</Node>
+      <Node id="4" recordCount="31" score="0.354838709677419">
+        <Extension>
+          <X-Node>
+            <X-RegInfo mean="0.354838709677419" stdDev="0.48637345711392"/>
+</X-Node>
+</Extension>
+        <CompoundPredicate booleanOperator="surrogate">
+          <CompoundPredicate booleanOperator="and">
+            <SimplePredicate field="EVENT_TYPE_OUTGOING_USAGE_DIRECT" operator="isMissing"/>
+            <True/>
+</CompoundPredicate>
+          <False/>
+</CompoundPredicate>
+        <ScoreDistribution recordCount="20" value="0"/>
+        <ScoreDistribution recordCount="0" value="1"/>
+        <ScoreDistribution recordCount="0" value="2"/>
+        <ScoreDistribution recordCount="0" value="3"/>
+        <ScoreDistribution recordCount="0" value="4"/>
+        <ScoreDistribution recordCount="0" value="5"/>
+        <ScoreDistribution recordCount="0" value="6"/>
+        <ScoreDistribution recordCount="0" value="7"/>
+        <ScoreDistribution recordCount="0" value="8"/>
+        <ScoreDistribution recordCount="11" value="9"/>
+</Node>
+</Node>
+    <Extension>
+      <X-TreeModel/>
+</Extension>
+</TreeModel>
+</PMML>

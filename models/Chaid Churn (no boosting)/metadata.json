@@ -1,0 +1,46 @@
+{
+    "id": 1559612684815,
+    "name": "Chaid Churn (no boosting)",
+    "latestModelVersion": 1,
+    "runtime": "SPSS PMML Scoring Engine",
+    "author": "999",
+    "createdAt": 1559612684815,
+    "filename": "import",
+    "features": [
+        {
+            "name": "EVENT_TYPE_OUTGOING_USAGE_DIRECT",
+            "type": "double"
+        },
+        {
+            "name": "EVENT_TYPE_INCOMING_USAGE_DIRECT",
+            "type": "double"
+        },
+        {
+            "name": "EVENT_TYPE_SMS_USAGE_DIRECTION",
+            "type": "double"
+        },
+        {
+            "name": "OUTGOING_OVERALL",
+            "type": "double"
+        },
+        {
+            "name": "SMS_OVERALL",
+            "type": "double"
+        }
+    ],
+    "labelColumns": [
+        {
+            "name": "CHURN",
+            "type": "double"
+        }
+    ],
+    "type": "pmml-model-3.0",
+    "serialization": "pmml",
+    "learningType": "Supervised",
+    "algorithm": "TreeModel",
+    "algorithmType": "Regression",
+    "params": {},
+    "publishedBy": "",
+    "isPublished": false,
+    "publishedModelVersion": -1
+}

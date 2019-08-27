@@ -1,0 +1,1256 @@
+{
+  "name": "New dashboard",
+  "layout": {
+    "id": "page0",
+    "items": [
+      {
+        "id": "page1",
+        "items": [
+          {
+            "id": "model0000016b1aa0e370_00000003",
+            "style": {
+              "left": "33px",
+              "top": "33px",
+              "height": "420px",
+              "width": "500px"
+            },
+            "type": "widget"
+          },
+          {
+            "id": "model0000016b1aa6858a_00000001",
+            "style": {
+              "left": "583px",
+              "top": "35px",
+              "height": "320px",
+              "width": "220px"
+            },
+            "type": "widget"
+          }
+        ],
+        "type": "absolute",
+        "title": {
+          "translationTable": {
+            "Default": "QoS Cell Site"
+          }
+        },
+        "templateName": "NoTemplate"
+      },
+      {
+        "id": "model0000016b1aa81092_00000000",
+        "items": [
+          {
+            "id": "model0000016b1aa89c6d_00000002",
+            "style": {
+              "left": "12px",
+              "top": "12px",
+              "height": "320px",
+              "width": "220px"
+            },
+            "type": "widget"
+          },
+          {
+            "id": "model0000016b1aa8d647_00000000",
+            "style": {
+              "left": "263px",
+              "top": "14px",
+              "height": "110px",
+              "width": "200px"
+            },
+            "type": "widget"
+          },
+          {
+            "id": "model0000016b1aa948b3_00000003",
+            "style": {
+              "left": "263px",
+              "top": "124px",
+              "height": "110px",
+              "width": "200px"
+            },
+            "type": "widget"
+          },
+          {
+            "id": "model0000016b1aaa8156_00000000",
+            "style": {
+              "left": "545px",
+              "top": "29.5px",
+              "height": "299px",
+              "width": "350px"
+            },
+            "type": "widget"
+          }
+        ],
+        "type": "absolute",
+        "title": {
+          "translationTable": {
+            "Default": "Customer Interests"
+          }
+        },
+        "templateName": "NoTemplate"
+      },
+      {
+        "id": "model0000016b1aacc4cf_00000000",
+        "items": [
+          {
+            "id": "model0000016b1aad0c4c_00000003",
+            "style": {
+              "left": "38px",
+              "top": "12px",
+              "height": "443px",
+              "width": "661px"
+            },
+            "type": "widget"
+          }
+        ],
+        "type": "absolute",
+        "title": {
+          "translationTable": {
+            "Default": "Avg Call Duration"
+          }
+        },
+        "templateName": "NoTemplate"
+      },
+      {
+        "id": "model0000016b1aaf5641_00000000",
+        "items": [
+          {
+            "id": "model0000016b1ab3490c_00000001",
+            "style": {
+              "left": "31px",
+              "top": "12px",
+              "height": "342px",
+              "width": "469px"
+            },
+            "type": "widget",
+            "clones": 1
+          },
+          {
+            "id": "model0000016b1ab58dbd_00000000",
+            "from": "model0000016b1ab3490c_00000001",
+            "style": {
+              "left": "56.5px",
+              "top": "31px",
+              "height": "342px",
+              "width": "469px"
+            },
+            "type": "widget",
+            "clones": 1
+          },
+          {
+            "id": "model0000016b1ab5e42d_00000001",
+            "from": "model0000016b1ab58dbd_00000000",
+            "style": {
+              "left": "514px",
+              "top": "31px",
+              "height": "342px",
+              "width": "469px"
+            },
+            "type": "widget"
+          }
+        ],
+        "type": "absolute",
+        "title": {
+          "translationTable": {
+            "Default": "Saigon QoS"
+          }
+        },
+        "templateName": "NoTemplate"
+      }
+    ],
+    "style": {
+      "height": "100%"
+    },
+    "type": "tab"
+  },
+  "theme": "defaultTheme",
+  "version": 1009,
+  "eventGroups": [
+    {
+      "id": "page1:1",
+      "widgetIds": [
+        "model0000016b1aa0e370_00000003",
+        "model0000016b1aa6858a_00000001"
+      ]
+    },
+    {
+      "id": "model0000016b1aa81092_00000000:1",
+      "widgetIds": [
+        "model0000016b1aa89c6d_00000002",
+        "model0000016b1aa8d647_00000000",
+        "model0000016b1aa948b3_00000003",
+        "model0000016b1aaa8156_00000000"
+      ]
+    },
+    {
+      "id": "model0000016b1aacc4cf_00000000:1",
+      "widgetIds": [
+        "model0000016b1aad0c4c_00000003"
+      ]
+    },
+    {
+      "id": "model0000016b1aaf5641_00000000:1",
+      "widgetIds": [
+        "model0000016b1ab3490c_00000001",
+        "model0000016b1ab58dbd_00000000",
+        "model0000016b1ab5e42d_00000001"
+      ]
+    }
+  ],
+  "properties": {
+    "localCache": "yes",
+    "defaultLocale": "Default"
+  },
+  "dataSources": {
+    "version": "1.0",
+    "sources": [
+      {
+        "id": "model0000016b1aa0382e_00000001",
+        "assetId": "assetId0000016b1aa0382d_00000000",
+        "clientId": "eyJwcm9qZWN0IjoiVGVsY28tZGVtby1Ub21teSIsIm5hbWUiOiJTaW5nX0NlbGxfUXVhbGl0eSIsInR5cGUiOiJDU1YifQ==",
+        "module": {
+          "identifier": "aSing_Cell_Quality",
+          "label": "Sing_Cell_Quality",
+          "source": {
+            "id": "Sing_Cell_Quality",
+            "srcUrl": {
+              "property": [
+                {
+                  "name": "separator",
+                  "value": ","
+                },
+                {
+                  "name": "ColumnNamesLine",
+                  "value": "true"
+                },
+                {
+                  "name": "headers",
+                  "value": [
+                    {
+                      "name": "Authorization",
+                      "value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic3ViIjoiYWRtaW4iLCJpc3MiOiJLTk9YU1NPIiwiYXVkIjoiRFNYIiwicm9sZSI6IkFkbWluIiwicGVybWlzc2lvbnMiOlsiYWRtaW5pc3RyYXRvciIsIm1hbmFnZV9jYXRhbG9nIiwiYWNjZXNzX2NhdGFsb2ciLCJtYW5hZ2VfcG9saWNpZXMiLCJhY2Nlc3NfcG9saWNpZXMiLCJ2aXJ0dWFsaXplX3RyYW5zZm9ybSIsImNhbl9wcm92aXNpb24iLCJkZXBsb3ltZW50X2FkbWluIl0sInVpZCI6Ijk5OSIsImF1dGhlbnRpY2F0b3IiOiJkZWZhdWx0IiwiZGlzcGxheV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE1NTk2MTQwNjEsImV4cCI6MTU1OTY1NzI2MX0.VORdE-xTLgKmWGfZjER0K_AldhNjlNce4W9q10vwN1zOAkhnXNATsjrHZiy_0wI7b6LbwiVKtV_8zzNfOT1EH1c-wglVWNrVxHY-hkrm0WEWBMlB7O_0m1yb04AB64CbztLcD-5arZw85wtH3cT3doWnTSWsnS08lO_krwx3gN899Q_tcq8O_OJ5WjfcKGRMCTTpDHQXF2XRcNM6MPIISqhtgiBmJHd65NQGL2wxAaY9trdQls5BjWGflH-Ub5lGt-aNADcIX_8OgRLpxfh_G6Uwc6-a3u8Uu8F9CNeuDlAZakA_xJbHAfk4FclS77aeT1wfiirgXGRXiUoKPKYy0A"
+                    }
+                  ]
+                }
+              ],
+              "sourceUrl": "http://dsx-core-svc:3000/v3/project/Telco-demo-Tommy/asset/Sing_Cell_Quality.csv/download"
+            }
+          },
+          "table": {
+            "column": [
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "LOCATION",
+                "label": "LOCATION",
+                "name": "aLOCATION",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "EVENT_SUCCESS_Mean",
+                "label": "EVENT_SUCCESS_Mean",
+                "name": "aEVENT_SUCCESS_Mean",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "EVENT_DURATION_Mean",
+                "label": "EVENT_DURATION_Mean",
+                "name": "aEVENT_DURATION_Mean",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "BIGINT",
+                "description": "Record_Count",
+                "label": "Record_Count",
+                "name": "aRecord_Count",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "Region",
+                "label": "Region",
+                "name": "aRegion",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cRegion",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "District",
+                "label": "District",
+                "name": "aDistrict",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "LONGITUDE",
+                "label": "LONGITUDE",
+                "name": "aLONGITUDE",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cLongitude",
+                "usage": "fact"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "LATITUDE",
+                "label": "LATITUDE",
+                "name": "aLATITUDE",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cLatitude",
+                "usage": "fact"
+              }
+            ],
+            "name": "SingCellQuality"
+          },
+          "xsd": "https://ibm.com/daas/module/1.0/module.xsd"
+        },
+        "name": "Sing_Cell_Quality",
+        "shaping": {
+          "embeddedModuleUpToDate": true
+        }
+      },
+      {
+        "id": "model0000016b1aa8425c_00000001",
+        "assetId": "assetId0000016b1aa8425b_00000000",
+        "clientId": "eyJwcm9qZWN0IjoiVGVsY28tZGVtby1Ub21teSIsIm5hbWUiOiJNT0JfQ1VTVE9NRVJfSU5GTyIsInR5cGUiOiJDU1YifQ==",
+        "module": {
+          "identifier": "aMOB_CUSTOMER_INFO",
+          "label": "MOB_CUSTOMER_INFO",
+          "source": {
+            "id": "MOB_CUSTOMER_INFO",
+            "srcUrl": {
+              "property": [
+                {
+                  "name": "separator",
+                  "value": ","
+                },
+                {
+                  "name": "ColumnNamesLine",
+                  "value": "true"
+                },
+                {
+                  "name": "headers",
+                  "value": [
+                    {
+                      "name": "Authorization",
+                      "value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic3ViIjoiYWRtaW4iLCJpc3MiOiJLTk9YU1NPIiwiYXVkIjoiRFNYIiwicm9sZSI6IkFkbWluIiwicGVybWlzc2lvbnMiOlsiYWRtaW5pc3RyYXRvciIsIm1hbmFnZV9jYXRhbG9nIiwiYWNjZXNzX2NhdGFsb2ciLCJtYW5hZ2VfcG9saWNpZXMiLCJhY2Nlc3NfcG9saWNpZXMiLCJ2aXJ0dWFsaXplX3RyYW5zZm9ybSIsImNhbl9wcm92aXNpb24iLCJkZXBsb3ltZW50X2FkbWluIl0sInVpZCI6Ijk5OSIsImF1dGhlbnRpY2F0b3IiOiJkZWZhdWx0IiwiZGlzcGxheV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE1NTk2MTQwNjEsImV4cCI6MTU1OTY1NzI2MX0.VORdE-xTLgKmWGfZjER0K_AldhNjlNce4W9q10vwN1zOAkhnXNATsjrHZiy_0wI7b6LbwiVKtV_8zzNfOT1EH1c-wglVWNrVxHY-hkrm0WEWBMlB7O_0m1yb04AB64CbztLcD-5arZw85wtH3cT3doWnTSWsnS08lO_krwx3gN899Q_tcq8O_OJ5WjfcKGRMCTTpDHQXF2XRcNM6MPIISqhtgiBmJHd65NQGL2wxAaY9trdQls5BjWGflH-Ub5lGt-aNADcIX_8OgRLpxfh_G6Uwc6-a3u8Uu8F9CNeuDlAZakA_xJbHAfk4FclS77aeT1wfiirgXGRXiUoKPKYy0A"
+                    }
+                  ]
+                }
+              ],
+              "sourceUrl": "http://dsx-core-svc:3000/v3/project/Telco-demo-Tommy/asset/MOB_CUSTOMER_INFO.csv/download"
+            }
+          },
+          "table": {
+            "column": [
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "Primary Interest",
+                "label": "Primary Interest",
+                "name": "aPrimary_Interest",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "Secondary Interest",
+                "label": "Secondary Interest",
+                "name": "aSecondary_Interest",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cSecond",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "Tertiary Interest",
+                "label": "Tertiary Interest",
+                "name": "aTertiary_Interest",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "Customer Number",
+                "label": "Customer Number",
+                "name": "aCustomer_Number",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "Customer Name",
+                "label": "Customer Name",
+                "name": "aCustomer_Name",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "Customer Type",
+                "label": "Customer Type",
+                "name": "aCustomer_Type",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "Credit Rating",
+                "label": "Credit Rating",
+                "name": "aCredit_Rating",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "Annual Income",
+                "label": "Annual Income",
+                "name": "aAnnual_Income",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "Account Status",
+                "label": "Account Status",
+                "name": "aAccount_Status",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "MID",
+                "label": "MID",
+                "name": "aMID",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              }
+            ],
+            "name": "MOBCUSTOMERINFO"
+          },
+          "xsd": "https://ibm.com/daas/module/1.0/module.xsd"
+        },
+        "name": "MOB_CUSTOMER_INFO",
+        "shaping": {
+          "embeddedModuleUpToDate": true
+        }
+      },
+      {
+        "id": "model0000016b1ab1de46_00000002",
+        "assetId": "assetId0000016b1ab1de46_00000000",
+        "clientId": "eyJwcm9qZWN0IjoiVGVsY28tZGVtby1Ub21teSIsIm5hbWUiOiJNT0JfSENNQ19DRUxMX1RPV0VSUyIsInR5cGUiOiJDU1YifQ==",
+        "module": {
+          "identifier": "aMOB_HCMC_CELL_TOWERS",
+          "label": "MOB_HCMC_CELL_TOWERS",
+          "source": {
+            "id": "MOB_HCMC_CELL_TOWERS",
+            "srcUrl": {
+              "property": [
+                {
+                  "name": "separator",
+                  "value": ","
+                },
+                {
+                  "name": "ColumnNamesLine",
+                  "value": "true"
+                },
+                {
+                  "name": "headers",
+                  "value": [
+                    {
+                      "name": "Authorization",
+                      "value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwic3ViIjoiYWRtaW4iLCJpc3MiOiJLTk9YU1NPIiwiYXVkIjoiRFNYIiwicm9sZSI6IkFkbWluIiwicGVybWlzc2lvbnMiOlsiYWRtaW5pc3RyYXRvciIsIm1hbmFnZV9jYXRhbG9nIiwiYWNjZXNzX2NhdGFsb2ciLCJtYW5hZ2VfcG9saWNpZXMiLCJhY2Nlc3NfcG9saWNpZXMiLCJ2aXJ0dWFsaXplX3RyYW5zZm9ybSIsImNhbl9wcm92aXNpb24iLCJkZXBsb3ltZW50X2FkbWluIl0sInVpZCI6Ijk5OSIsImF1dGhlbnRpY2F0b3IiOiJkZWZhdWx0IiwiZGlzcGxheV9uYW1lIjoiYWRtaW4iLCJpYXQiOjE1NTk2MTQwNjEsImV4cCI6MTU1OTY1NzI2MX0.VORdE-xTLgKmWGfZjER0K_AldhNjlNce4W9q10vwN1zOAkhnXNATsjrHZiy_0wI7b6LbwiVKtV_8zzNfOT1EH1c-wglVWNrVxHY-hkrm0WEWBMlB7O_0m1yb04AB64CbztLcD-5arZw85wtH3cT3doWnTSWsnS08lO_krwx3gN899Q_tcq8O_OJ5WjfcKGRMCTTpDHQXF2XRcNM6MPIISqhtgiBmJHd65NQGL2wxAaY9trdQls5BjWGflH-Ub5lGt-aNADcIX_8OgRLpxfh_G6Uwc6-a3u8Uu8F9CNeuDlAZakA_xJbHAfk4FclS77aeT1wfiirgXGRXiUoKPKYy0A"
+                    }
+                  ]
+                }
+              ],
+              "sourceUrl": "http://dsx-core-svc:3000/v3/project/Telco-demo-Tommy/asset/MOB_HCMC_CELL_TOWERS.csv/download"
+            }
+          },
+          "table": {
+            "column": [
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "MAST",
+                "label": "MAST",
+                "name": "aMAST",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "Voice QoS",
+                "label": "Voice QoS",
+                "name": "aVoice_QoS",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "Call Count_Sum",
+                "label": "Call Count_Sum",
+                "name": "aCall_Count_Sum",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cNone",
+                "usage": "fact"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "LONGITUDE",
+                "label": "LONGITUDE",
+                "name": "aLONGITUDE",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cLongitude",
+                "usage": "fact"
+              },
+              {
+                "datatype": "FLOAT",
+                "description": "LATITUDE",
+                "label": "LATITUDE",
+                "name": "aLATITUDE",
+                "nullable": true,
+                "regularAggregate": "total",
+                "taxonomyFamily": "cLatitude",
+                "usage": "fact"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "ADDRESS",
+                "label": "ADDRESS",
+                "name": "aADDRESS",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cStreetAddress",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "SITE_TYPE",
+                "label": "SITE_TYPE",
+                "name": "aSITE_TYPE",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "CELL_ID",
+                "label": "CELL_ID",
+                "name": "aCELL_ID",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              },
+              {
+                "datatype": "NVARCHAR(MAX)",
+                "description": "CELL_NAME",
+                "label": "CELL_NAME",
+                "name": "aCELL_NAME",
+                "nullable": true,
+                "regularAggregate": "countDistinct",
+                "taxonomyFamily": "cNone",
+                "usage": "attribute"
+              }
+            ],
+            "name": "MOBHCMCCELLTOWERS"
+          },
+          "xsd": "https://ibm.com/daas/module/1.0/module.xsd"
+        },
+        "name": "MOB_HCMC_CELL_TOWERS",
+        "shaping": {
+          "embeddedModuleUpToDate": true
+        }
+      }
+    ]
+  },
+  "pageContext": [
+    {
+      "origin": "visualization",
+      "table": "",
+      "alias": "0",
+      "sourceId": "model0000016b1aa0382e_00000001",
+      "hierarchies": [
+        {
+          "hierarchyUniqueName": "SingCellQuality.aDistrict"
+        }
+      ],
+      "scope": "page1",
+      "hierarchyUniqueNames": [
+        "SingCellQuality.aDistrict"
+      ],
+      "eventSourceId": "model0000016b1aa6858a_00000001",
+      "eventGroupId": "page1:1",
+      "tupleSet": "{}"
+    },
+    {
+      "origin": "visualization",
+      "table": "",
+      "alias": "0",
+      "sourceId": "model0000016b1aa8425c_00000001",
+      "hierarchies": [
+        {
+          "hierarchyUniqueName": "MOBCUSTOMERINFO.aPrimary_Interest"
+        }
+      ],
+      "scope": "model0000016b1aa81092_00000000",
+      "hierarchyUniqueNames": [
+        "MOBCUSTOMERINFO.aPrimary_Interest"
+      ],
+      "eventSourceId": "model0000016b1aa89c6d_00000002",
+      "eventGroupId": "model0000016b1aa81092_00000000:1",
+      "tupleSet": "{}"
+    }
+  ],
+  "drillThrough": [],
+  "widgets": {
+    "model0000016b1aa0e370_00000003": {
+      "id": "model0000016b1aa0e370_00000003",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1aa0382e_00000001",
+            "dataItems": [
+              {
+                "id": "model0000016b1aa0e370_00000000",
+                "itemId": "SingCellQuality.aLONGITUDE",
+                "itemLabel": "LONGITUDE"
+              },
+              {
+                "id": "model0000016b1aa19b1c_00000000",
+                "itemId": "SingCellQuality.aLATITUDE",
+                "itemLabel": "LATITUDE"
+              },
+              {
+                "id": "model0000016b1aa1dc17_00000000",
+                "itemId": "SingCellQuality.aEVENT_SUCCESS_Mean",
+                "itemLabel": "EVENT_SUCCESS_Mean",
+                "aggregate": "avg"
+              },
+              {
+                "id": "model0000016b1aa5f7c4_00000000",
+                "itemId": "SingCellQuality.aLOCATION",
+                "itemLabel": "LOCATION"
+              }
+            ],
+            "id": "model0000016b1aa0e370_00000001"
+          }
+        ]
+      },
+      "visTypeLocked": true,
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "categories",
+            "dataItems": [
+              "model0000016b1aa5f7c4_00000000"
+            ],
+            "dataItemSettings": [],
+            "caption": "Regions",
+            "id": "categories",
+            "layerId": "data"
+          },
+          {
+            "name": "values",
+            "dataItems": [
+              "model0000016b1aa1dc17_00000000"
+            ],
+            "caption": "Regions heat",
+            "id": "values",
+            "layerId": "data"
+          },
+          {
+            "name": "size",
+            "dataItems": [
+              "model0000016b1aa0e370_00000000"
+            ],
+            "caption": "Size",
+            "id": "size",
+            "layerId": "data"
+          },
+          {
+            "name": "pointcolor",
+            "dataItems": [
+              "model0000016b1aa19b1c_00000000"
+            ],
+            "caption": "Bubble heat",
+            "id": "pointcolor",
+            "layerId": "data"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "localFilters": [],
+      "visId": "com.ibm.vis.rave2polygonmap"
+    },
+    "model0000016b1aa6858a_00000001": {
+      "id": "model0000016b1aa6858a_00000001",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1aa0382e_00000001",
+            "dataItems": [
+              {
+                "id": "model0000016b1aa68589_00000000",
+                "itemId": "SingCellQuality.aDistrict",
+                "itemLabel": "District"
+              }
+            ],
+            "id": "model0000016b1aa68589_00000001"
+          }
+        ]
+      },
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "level1",
+            "dataItems": [
+              "model0000016b1aa68589_00000000"
+            ],
+            "caption": "Level one",
+            "id": "level1",
+            "layerId": "data"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "visId": "list"
+    },
+    "model0000016b1aa89c6d_00000002": {
+      "id": "model0000016b1aa89c6d_00000002",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1aa8425c_00000001",
+            "dataItems": [
+              {
+                "id": "model0000016b1aa89c6c_00000000",
+                "itemId": "MOBCUSTOMERINFO.aPrimary_Interest",
+                "itemLabel": "Primary Interest"
+              }
+            ],
+            "id": "model0000016b1aa89c6d_00000000"
+          }
+        ]
+      },
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "level1",
+            "dataItems": [
+              "model0000016b1aa89c6c_00000000"
+            ],
+            "caption": "Level one",
+            "id": "level1",
+            "layerId": "data"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "visId": "list"
+    },
+    "model0000016b1aa8d647_00000000": {
+      "id": "model0000016b1aa8d647_00000000",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1aa8425c_00000001",
+            "dataItems": [
+              {
+                "id": "model0000016b1aa8d646_00000000",
+                "itemId": "MOBCUSTOMERINFO.aAnnual_Income",
+                "itemLabel": "Annual Income",
+                "aggregate": "avg",
+                "format": {
+                  "id": "0digit",
+                  "localizedString": "789",
+                  "formatSpec": {
+                    "type": "number",
+                    "maximumFractionDigits": 0,
+                    "selectedFormat": "0digit"
+                  }
+                }
+              }
+            ],
+            "id": "model0000016b1aa8d646_00000001"
+          }
+        ]
+      },
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "values",
+            "dataItems": [
+              "model0000016b1aa8d646_00000000"
+            ],
+            "dataItemSettings": [],
+            "caption": "Value",
+            "id": "values",
+            "layerId": "data"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "localFilters": [],
+      "visId": "summary"
+    },
+    "model0000016b1aa948b3_00000003": {
+      "id": "model0000016b1aa948b3_00000003",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1aa8425c_00000001",
+            "dataItems": [
+              {
+                "id": "model0000016b1aa948b3_00000000",
+                "itemId": "MOBCUSTOMERINFO.aCredit_Rating",
+                "itemLabel": "Credit Rating",
+                "aggregate": "avg",
+                "format": {
+                  "id": "0digit",
+                  "localizedString": "789",
+                  "formatSpec": {
+                    "type": "number",
+                    "maximumFractionDigits": 0,
+                    "selectedFormat": "0digit"
+                  }
+                }
+              }
+            ],
+            "id": "model0000016b1aa948b3_00000001"
+          }
+        ]
+      },
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "values",
+            "dataItems": [
+              "model0000016b1aa948b3_00000000"
+            ],
+            "dataItemSettings": [],
+            "caption": "Value",
+            "id": "values",
+            "layerId": "data"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "localFilters": [],
+      "visId": "summary"
+    },
+    "model0000016b1aaa8156_00000000": {
+      "id": "model0000016b1aaa8156_00000000",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1aa8425c_00000001",
+            "dataItems": [
+              {
+                "id": "model0000016b1aaa8155_00000000",
+                "itemId": "MOBCUSTOMERINFO.aSecondary_Interest",
+                "itemLabel": "Secondary Interest"
+              },
+              {
+                "id": "model0000016b1aaacbfc_00000000",
+                "itemId": "MOBCUSTOMERINFO.aCustomer_Name",
+                "itemLabel": "Customer Name"
+              }
+            ],
+            "id": "model0000016b1aaa8155_00000001"
+          }
+        ]
+      },
+      "visTypeLocked": true,
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "categories",
+            "dataItems": [
+              "model0000016b1aaa8155_00000000"
+            ],
+            "dataItemSettings": [],
+            "caption": "Segments",
+            "id": "categories",
+            "layerId": "data"
+          },
+          {
+            "name": "values",
+            "dataItems": [
+              "model0000016b1aaacbfc_00000000"
+            ],
+            "caption": "Size",
+            "id": "values"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "visId": "com.ibm.vis.rave2bundlepie"
+    },
+    "model0000016b1aad0c4c_00000003": {
+      "id": "model0000016b1aad0c4c_00000003",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1aa0382e_00000001",
+            "dataItems": [
+              {
+                "id": "model0000016b1aad0c4c_00000000",
+                "itemId": "SingCellQuality.aEVENT_DURATION_Mean",
+                "itemLabel": "EVENT_DURATION_Mean",
+                "aggregate": "avg"
+              },
+              {
+                "id": "model0000016b1aad9922_00000000",
+                "itemId": "SingCellQuality.aDistrict",
+                "itemLabel": "District"
+              },
+              {
+                "id": "model0000016b1aadc421_00000000",
+                "itemId": "SingCellQuality.aRegion",
+                "itemLabel": "Region"
+              }
+            ],
+            "id": "model0000016b1aad0c4c_00000001"
+          }
+        ]
+      },
+      "visTypeLocked": true,
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "size",
+            "dataItems": [
+              "model0000016b1aad0c4c_00000000"
+            ],
+            "caption": "Size",
+            "id": "size",
+            "layerId": "data"
+          },
+          {
+            "name": "categories",
+            "dataItems": [
+              "model0000016b1aad9922_00000000"
+            ],
+            "dataItemSettings": [],
+            "caption": "Bubbles",
+            "id": "categories"
+          },
+          {
+            "name": "color",
+            "dataItems": [
+              "model0000016b1aadc421_00000000"
+            ],
+            "caption": "Color",
+            "id": "color"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "localFilters": [],
+      "visId": "com.ibm.vis.rave2bundlepackedbubble"
+    },
+    "model0000016b1ab3490c_00000001": {
+      "id": "model0000016b1ab3490c_00000001",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1ab1de46_00000002",
+            "dataItems": [
+              {
+                "id": "model0000016b1ab3490a_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aLONGITUDE",
+                "itemLabel": "LONGITUDE",
+                "aggregate": "avg"
+              },
+              {
+                "id": "model0000016b1ab3c86a_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aLATITUDE",
+                "itemLabel": "LATITUDE",
+                "aggregate": "avg"
+              },
+              {
+                "id": "model0000016b1ab42229_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aADDRESS",
+                "itemLabel": "ADDRESS"
+              },
+              {
+                "id": "model0000016b1ab44dc5_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aVoice_QoS",
+                "itemLabel": "Voice QoS",
+                "aggregate": "avg"
+              }
+            ],
+            "id": "model0000016b1ab3490b_00000000"
+          }
+        ]
+      },
+      "visTypeLocked": true,
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "x",
+            "dataItems": [
+              "model0000016b1ab3490a_00000000"
+            ],
+            "caption": "x-axis",
+            "id": "x"
+          },
+          {
+            "name": "y",
+            "dataItems": [
+              "model0000016b1ab3c86a_00000000"
+            ],
+            "caption": "y-axis",
+            "id": "y"
+          },
+          {
+            "name": "categories",
+            "dataItems": [
+              "model0000016b1ab42229_00000000"
+            ],
+            "dataItemSettings": [],
+            "caption": "Points",
+            "id": "categories"
+          },
+          {
+            "name": "color",
+            "dataItems": [
+              "model0000016b1ab44dc5_00000000"
+            ],
+            "caption": "Color",
+            "id": "color"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "localFilters": [],
+      "visId": "com.ibm.vis.ravescatter"
+    },
+    "model0000016b1ab58dbd_00000000": {
+      "id": "model0000016b1ab58dbd_00000000",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1ab1de46_00000002",
+            "dataItems": [
+              {
+                "id": "model0000016b1ab3490a_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aLONGITUDE",
+                "itemLabel": "LONGITUDE",
+                "aggregate": "avg"
+              },
+              {
+                "id": "model0000016b1ab3c86a_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aLATITUDE",
+                "itemLabel": "LATITUDE",
+                "aggregate": "avg"
+              },
+              {
+                "id": "model0000016b1ab42229_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aADDRESS",
+                "itemLabel": "ADDRESS"
+              },
+              {
+                "id": "model0000016b1ab44dc5_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aVoice_QoS",
+                "itemLabel": "Voice QoS",
+                "aggregate": "avg"
+              }
+            ],
+            "id": "model0000016b1ab3490b_00000000"
+          }
+        ]
+      },
+      "visTypeLocked": true,
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "x",
+            "dataItems": [
+              "model0000016b1ab3490a_00000000"
+            ],
+            "caption": "x-axis",
+            "id": "x"
+          },
+          {
+            "name": "y",
+            "dataItems": [
+              "model0000016b1ab3c86a_00000000"
+            ],
+            "caption": "y-axis",
+            "id": "y"
+          },
+          {
+            "name": "categories",
+            "dataItems": [
+              "model0000016b1ab42229_00000000"
+            ],
+            "dataItemSettings": [],
+            "caption": "Points",
+            "id": "categories"
+          },
+          {
+            "name": "color",
+            "dataItems": [
+              "model0000016b1ab44dc5_00000000"
+            ],
+            "caption": "Color",
+            "id": "color"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "localFilters": [],
+      "visId": "com.ibm.vis.ravescatter"
+    },
+    "model0000016b1ab5e42d_00000001": {
+      "id": "model0000016b1ab5e42d_00000001",
+      "data": {
+        "dataViews": [
+          {
+            "modelRef": "model0000016b1ab1de46_00000002",
+            "dataItems": [
+              {
+                "id": "model0000016b1ab3490a_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aLONGITUDE",
+                "itemLabel": "LONGITUDE",
+                "aggregate": "avg"
+              },
+              {
+                "id": "model0000016b1ab3c86a_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aLATITUDE",
+                "itemLabel": "LATITUDE",
+                "aggregate": "avg"
+              },
+              {
+                "id": "model0000016b1ab42229_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aADDRESS",
+                "itemLabel": "ADDRESS"
+              },
+              {
+                "id": "model0000016b1ab704ec_00000000",
+                "itemId": "MOBHCMCCELLTOWERS.aCall_Count_Sum",
+                "itemLabel": "Call Count_Sum"
+              }
+            ],
+            "id": "model0000016b1ab3490b_00000000"
+          }
+        ]
+      },
+      "visTypeLocked": true,
+      "slotmapping": {
+        "slots": [
+          {
+            "name": "x",
+            "dataItems": [
+              "model0000016b1ab3490a_00000000"
+            ],
+            "caption": "x-axis",
+            "id": "x"
+          },
+          {
+            "name": "y",
+            "dataItems": [
+              "model0000016b1ab3c86a_00000000"
+            ],
+            "caption": "y-axis",
+            "id": "y"
+          },
+          {
+            "name": "categories",
+            "dataItems": [
+              "model0000016b1ab42229_00000000"
+            ],
+            "dataItemSettings": [],
+            "caption": "Points",
+            "id": "categories"
+          },
+          {
+            "name": "color",
+            "dataItems": [
+              "model0000016b1ab704ec_00000000"
+            ],
+            "caption": "Color",
+            "id": "color"
+          }
+        ]
+      },
+      "type": "live",
+      "name": {
+        "translationTable": {}
+      },
+      "localFilters": [],
+      "visId": "com.ibm.vis.ravescatter"
+    }
+  }
+}
